@@ -1,30 +1,51 @@
-# Aegis Promotional Web Page
+# Suyash Parate — Portfolio
 
-## Overview
-Aegis is a next-generation password management platform. This project contains the promotional landing page indicating that "Aegis is coming".
+Personal portfolio site showcasing full-stack engineering experience across web, mobile, cloud, and systems architecture.
 
-## Features
-- **Hero Section**: A prominent headline with a gradient effect and a subtitle explaining the value proposition.
-- **Features Grid**: Highlights three core pillars of the platform:
-  - Zero-Knowledge Architecture
-  - Seamless Sync
-  - Open Source
-- **Responsive Design**: The layout adapts seamlessly to mobile, tablet, and desktop screens.
-- **Advanced Typography & Theming**: Uses a sophisticated three-tier font system and CSS variables for a premium, high-end tech aesthetic.
+## Quick Start
 
-## Flows
-1. **User Lands on Page**: The user is greeted with a sleek, dark-themed UI that emphasizes security and modernity, letting them know that Aegis is in development.
+```bash
+pnpm install
+pnpm dev
+```
 
-## Architecture & Code Structure
-- `index.html`: The main entry point containing the semantic HTML structure.
-- `styles.css`: The stylesheet containing all custom styles, utilizing CSS variables for easy theme management.
-- `README.md`: The project documentation and knowledge base.
+Open [http://localhost:5173](http://localhost:5173).
+
+## Scripts
+
+| Command        | Description                     |
+| -------------- | ------------------------------- |
+| `pnpm dev`     | Start development server        |
+| `pnpm build`   | Type-check and production build |
+| `pnpm preview` | Preview production build        |
+| `pnpm lint`    | Run ESLint                      |
+
+## Project Structure
+
+```
+src/
+├── Assets/       Static assets (SVG, icons)
+├── Components/   Atomic UI (Button, Card, Badge, etc.)
+├── Constants/    Resume data (profile, projects, skills)
+├── Contexts/     Global React contexts
+├── Features/     Shared composed UI (Header, Footer)
+├── Hooks/        Reusable hooks
+├── Screens/      Page screens with sections
+└── Utils/        Utilities
+docs/
+└── portfolio.md  Feature & flow documentation
+```
 
 ## Design System
-- **Background**: Deep Premium Slate (`#050810`, `#0d1326`)
-- **Text**: White (`#ffffff`) and Muted Slate (`#8b9bb4`)
-- **Accent**: Cyan to Deep Blue gradient (`#4facfe` to `#00f2fe`)
-- **Typography**:
-  - **Display/Titles**: Space Grotesk (Tech-forward, authoritative)
-  - **Headings/Subtitles**: Plus Jakarta Sans (Clean, modern)
-  - **Body**: Inter (Maximum legibility)
+
+Warm editorial engineering studio — off-white paper surfaces, deep ink text, blueprint blue and copper accents, with selective dark panels for technical content.
+
+See [docs/portfolio.md](docs/portfolio.md) for full design tokens, page flow, and architecture details.
+
+## Deployment
+
+Build output goes to `dist/`. Deploy to any static host (Vercel, Netlify, Cloudflare Pages, GitHub Pages).
+
+```bash
+pnpm build
+```
