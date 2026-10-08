@@ -1,0 +1,66 @@
+@import 'tailwindcss';
+
+@theme {
+    --font-sans: 'DM Sans', system-ui, sans-serif;
+    --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+    --color-paper: #f5f0e8;
+    --color-paper-warm: #e8dfd2;
+    --color-paper-bright: #fefcf7;
+    --color-ink: #161513;
+    --color-ink-soft: #3c3934;
+    --color-stone: #776f64;
+    --color-panel: #14161a;
+    --color-panel-soft: #20242b;
+    --color-blueprint: #315cff;
+    --color-copper: #b8642c;
+    --color-signal: #2f8f6b;
+
+    --shadow-soft: 0 1px 2px rgba(22, 21, 19, 0.04), 0 8px 24px rgba(22, 21, 19, 0.06);
+    --shadow-lift: 0 4px 12px rgba(22, 21, 19, 0.08), 0 16px 40px rgba(22, 21, 19, 0.1);
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        html {
+            scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+        }
+    }
+
+    body {
+        @apply bg-paper text-ink font-sans antialiased;
+        background-image:
+            radial-gradient(circle at 20% 0%, rgba(49, 92, 255, 0.04), transparent 40%),
+            radial-gradient(circle at 80% 20%, rgba(184, 100, 44, 0.05), transparent 35%),
+            linear-gradient(180deg, var(--color-paper-bright) 0%, var(--color-paper) 100%);
+        min-height: 100vh;
+    }
+
+    ::selection {
+        background: rgba(49, 92, 255, 0.18);
+        color: var(--color-ink);
+    }
+}
+
+@layer utilities {
+    .grid-blueprint {
+        background-image: linear-gradient(rgba(49, 92, 255, 0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(49, 92, 255, 0.06) 1px, transparent 1px);
+        background-size: 24px 24px;
+    }
+
+    .text-balance {
+        text-wrap: balance;
+    }
+}

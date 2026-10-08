@@ -1,0 +1,10 @@
+export { PROFILE, PROOF_METRICS } from './profile';
+export { NAV_LINKS } from './navigation';
+export { SKILL_CATEGORIES, SYSTEM_LAYERS } from './skills';
+export type { SkillCategory } from './skills';
+export { EXPERIENCE, EDUCATION } from './experience';
+export type { ExperienceEntry } from './experience';
+export { PROJECTS } from './projects';
+export type { Project } from './projects';
+export { CURRENT_FOCUS } from './currentFocus';
+export type { CurrentFocusItem } from './currentFocus';

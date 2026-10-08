@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 32" fill="none">
+  <rect x="0" y="4" width="24" height="24" rx="6" fill="#161513"/>
+  <text x="6" y="20" font-family="monospace" font-size="12" font-weight="500" fill="#FEFCF7">SP</text>
+  <circle cx="20" cy="8" r="3" fill="#315CFF"/>
+  <text x="32" y="21" font-family="sans-serif" font-size="14" font-weight="600" fill="#161513">Suyash Parate</text>
+</svg>
