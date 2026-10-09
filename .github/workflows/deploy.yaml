@@ -28,7 +28,7 @@ jobs:
             # 4. Install dependencies exactly as locked and compile the app
             - name: Install & Build
               run: |
-                  pnpm install --prod --frozen-lockfile --ignore-scripts
+                  pnpm install --frozen-lockfile --ignore-scripts
                   pnpm build
 
             # 5. Securely sync files to the server via SSH
