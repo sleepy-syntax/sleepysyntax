@@ -9,7 +9,7 @@ export const EXPERIENCE: ExperienceEntry[] = [
     {
         company: 'Mithya Labs Private Limited',
         role: 'Full Stack Developer',
-        period: 'March 2022 — Present',
+        period: 'March 2022 — October 2026',
         highlights: [
             'Architected full-stack applications with React, Next.js, TypeScript, Node.js, Express, and NestJS',
             'Designed SQL and NoSQL database schemas with query optimization and data integrity across complex architectures',
